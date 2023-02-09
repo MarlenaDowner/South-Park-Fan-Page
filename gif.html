@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>South Park GIF's</title>
+</head>
+
+<body>
+  <button id="Eric-Cartmen">Eric Cartmen GIF</button>
+  <div id="images">
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript">
+    //
+    $("#Eric-Cartmen").on("click", function() {
+
+      //
+      var queryURL = "https://api.giphy.com/v1/gifs/random?api_key=WQeoRa1jNidriRyjk6XSRHDNGr5VSssB&tagdc6zaTOxFJmzC&tag=south-park-eric-cartman&rating=r";
+
+      //
+      $.ajax({
+        url: queryURL,
+        method: "GET"
+      })
+
+      //
+        .then(function(response) {
+
+        //
+        var imageUrl = response.data.images.original.url;
+
+          //
+          var catImage = $("<img>");
+
+          //
+          catImage.attr("src", imageUrl);
+          catImage.attr("alt", "Eric Cartmen");
+
+          //
+          $("#images").prepend(catImage);
+        });
+    });
+  </script>
+
+  <button id="kyle-broflovski">kyle broflovski GIF</button>
+  <div id="images">
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript">
+    //
+    $("#kyle-broflovski").on("click", function() {
+
+      //
+      var queryURL = "https://api.giphy.com/v1/gifs/random?api_key=WQeoRa1jNidriRyjk6XSRHDNGr5VSssB&tagdc6zaTOxFJmzC&tag=south-park-kyle-broflovski&rating=r";
+
+      //
+      $.ajax({
+        url: queryURL,
+        method: "GET"
+      })
+
+      //
+        .then(function(response) {
+
+        //
+        var imageUrl = response.data.images.original.url;
+
+          //
+          var catImage = $("<img>");
+
+          //
+          catImage.attr("src", imageUrl);
+          catImage.attr("alt", "kyle broflovski");
+
+          //
+          $("#images").prepend(catImage);
+        });
+    });
+  </script>
+</body>
+
+</html>
