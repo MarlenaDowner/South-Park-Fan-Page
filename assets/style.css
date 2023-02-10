@@ -1,12 +1,11 @@
 .container-fluid {
-    height: 100px;
+    width:5%;
 }
 
 /*image left handside*/
 .logoImg {
     display: flex;
     flex-direction: row;
-    border: solid 1px red;
 }
 
 /*image left handside*/
@@ -22,7 +21,6 @@
     margin-left: 50px;
     width: 50%;
     height: 50%;
-    border: solid 1px red;
 }
 
 .jumbotron {
@@ -34,4 +32,24 @@
     display: flex;
     align-items: center;
     justify-content: center;
-  }
+}
+
+.pic {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+#cartman {
+    border:solid 1px red;
+    width: 20vh;
+    max-height: 25%;
+}
+
+.bg-image{
+    background-image: url(../pictures/fact-page-backdrop.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 150vh;
+    max-width: 100%;
+}
