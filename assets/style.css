@@ -18,10 +18,18 @@ body {
     background-attachment: fixed;
     background-size: 200% 100%;
     background-position: center;
-    /* background: rgba(223, 223, 223, 0.959); */
-    /* opacity: 0.2; */
     font-family: cursive;
-    }
+ }
+
+
+/* .background1 {
+    background-image: url('./south-park-25th-anniversay-081222-1bc607f6291e4e1c91e31da1034de47a.webp');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 200% 100%;
+    background-position: center;
+} */
+
 
 /*navbar background*/
 .bg-light {
@@ -88,21 +96,18 @@ a {
 .InfoCard {
     margin-top: 15px;
     margin-bottom: 15px;
-
+    
 }
 
 .card-body {
     padding-bottom: 0px;
     
-    
 }
 
 /*----responsive card----*/
 .card {
-    background: #E16907;
-    
+    background: rgba(221, 220, 218, 0.555);
 }
-
 
 /* .Infocontainer {
     margin-top: 35px;  */
@@ -117,24 +122,157 @@ a {
 /*----Footer----*/
 
 
+/*----Media Screens----*/
 
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 480px) and (max-width: 769px) {
     .navbar, .navbar-expand-lg, .navbar-light, .bg-light, .navbar-brand {
         flex-direction: column;
         align-items: flex-start;
         text-align: left;
     }
+ }
 
+    @media  screen and (min-width: 580px) and (max-width: 769px) {
+        .navbar, .navbar-expand-lg, .navbar-light, .bg-light, .navbar-brand {
+            flex-direction: column;
+            align-items: flex-start;
+            text-align: left;
+        }
+        
+        .logoImg img {
+            width: 150px;
+            height: 100px;
+            margin-left: 15px;
+        }
+    }
+
+    @media  screen and (min-width: 680px) and (max-width: 769px) {
+        .navbar, .navbar-expand-lg, .navbar-light, .bg-light, .navbar-brand {
+            flex-direction: column;
+            align-items: flex-start;
+            text-align: left;
+        }
+        
+        .logoImg img {
+            width: 170px;
+            height: 120px;
+            margin-left: 5px;
+            
+        }
+
+        #banner {
+            margin-right: 16px;
+
+        }
+    }
+
+    @media  screen and (min-width: 769px) and (max-width: 1280px) {
+        .navbar, .navbar-expand-lg, .navbar-light, .bg-light, .navbar-brand {
+            flex-direction: column;
+            align-items: flex-start;
+            text-align: left;
+        }
+
+        .logoImg img {
+            width: 190px;
+            height: 135px;
+            margin-left: 25px;
+        }
+
+        #banner {
+            margin-right: 20px;
+
+        }
+    }
+
+    @media  screen and (min-width: 880px) and (max-width: 1280px) {
+        .navbar, .navbar-expand-lg, .navbar-light, .bg-light, .navbar-brand {
+            flex-direction: column;
+            align-items: flex-start;
+            text-align: left;
+        }
+
+        .logoImg img {
+            width: 210px;
+            height: 150px;
+            margin-left: 25px;
+        }
+
+        #banner {
+            margin-right: 30px;
+
+        }
+    }
+
+    @media  screen and (min-width: 1000px) and (max-width: 1280px) {
+        .navbar, .navbar-expand-lg, .navbar-light, .bg-light, .navbar-brand {
+            flex-direction: column;
+            align-items: flex-start;
+            text-align: left;
+        }
+
+        .logoImg img {
+            width: 230px;
+            height: 170px;
+            margin-left: 25px;
+        }
+
+        #banner {
+            margin-right: 50px;
+
+        }
     }
 
 
-    /* @media screen and (max-width: 1000px) {
-        a {
-
-            font-display: bold;
-            color: black;
+    @media  screen and (min-width: 1280px) and (max-width: 1350px) {
+        .navbar, .navbar-expand-lg, .navbar-light, .bg-light, .navbar-brand {
+            flex-direction: column;
+            align-items: flex-start;
+            text-align: left;
         }
-    } */
+
+        .logoImg img {
+            width: 260px;
+            height: 190px;
+            margin-left: -20px;
+        }
+
+        #banner {
+            margin-right: 130px;
+
+        }
+
+        a {
+            font-size: 1.1rem;
+
+        }
+    }
+
+    @media  screen and (min-width: 1350px) and (max-width: 2000px) {
+        .navbar, .navbar-expand-lg, .navbar-light, .bg-light, .navbar-brand {
+            flex-direction: column;
+            align-items: flex-start;
+            text-align: left;
+        }
+
+        .logoImg img {
+            width: 260px;
+            height: 190px;
+            margin-left: -20px;
+        }
+
+        #banner {
+            margin-right: 100px;
+
+        }
+
+        a {
+            font-size: 1.1rem;
+
+        }
+    }
+
+
 
     /* @media screen and (max-width: 1024px) {
         .navbar, .navbar-expand-lg, .navbar-light, .bg-light, .navbar-brand {
