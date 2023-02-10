@@ -1,37 +1,33 @@
 /*------------Nav Bar, Header Font, Footer will be the SAME for all pages-------------*/
 
 /*-----------HOME PAGE------------*/
-
-
-/*----Nav Bar----*/
-
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-/*----come back to this for media screen----*/
 body {
-    background-image: url('./south-park-25th-anniversay-081222-1bc607f6291e4e1c91e31da1034de47a.webp');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: 200% 100%;
-    background-position: center;
     font-family: cursive;
  }
 
-
-/* .background1 {
+/*----HOME Background image---*/
+.background1 {
     background-image: url('./south-park-25th-anniversay-081222-1bc607f6291e4e1c91e31da1034de47a.webp');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 200% 100%;
     background-position: center;
-} */
+}
 
+/*----GIFY Back ground image----*/
+/*----YOUTUBE SHORTS Back ground image----*/
+/*----CHARACTERS Back ground image----*/
+/*----QUIZ Back ground image----*/
 
-/*navbar background*/
+/*------Nav Bar-----*/
+
+/*-navbar background-*/
 .bg-light {
     background-color: #765B49 !important;
 }
@@ -40,39 +36,32 @@ body {
     margin-top: -40px;
 }
 
-/* .navbar-brand {
-    height: 20px;
-}
-     */
-
 .navbar-brand {
     margin-right: 0;
 }
 
-/*SP Logo left in navbar*/
+/*-SP Logo left in navbar-*/
 .logoImg {
     position: absolute;
     margin-left: 50px;
-    /* border: solid 1px red; */
 }
 
-/*SP Logo left in navbar*/
+/*-SP Logo left in navbar-*/
 .logoImg img {
     width: 135px;
     height: 85px;
     margin-right: 10px;
 }
 
-/*SP written logo*/
+/*-SP written logo-*/
  #banner {
     float: right;
     margin-top: 15px;
-    width: 60%; /*55*/
+    width: 60%;
     height: 60%;
-    /* border: solid 1px red; */
 }
 
-/*----Header----*/
+/*-Header-*/
 a {
     font-display: bold;
     color: black !important;
@@ -90,39 +79,45 @@ a {
     
 }
 
-/*----Home page info----*/
+/*------Home page introduction----*/
 
-/*----container----*/
+/*-container-*/
 .InfoCard {
     margin-top: 15px;
-    margin-bottom: 15px;
-    
+    margin-bottom: 15px; 
 }
 
 .card-body {
-    padding-bottom: 0px;
-    
+    padding-bottom: 0px;  
 }
 
-/*----responsive card----*/
+/*-responsive card-*/
 .card {
     background: rgba(221, 220, 218, 0.555);
 }
 
-/* .Infocontainer {
-    margin-top: 35px;  */
-    /* margin-left: 200px; */
-    /* margin-bottom: -40px; */
-    /* background: #FDAF01; */
-    /* background: linear-gradient(90deg, rgba(9,108,155,1) 0%, rgba(9,108,155,1) 100%); */
- /* } */
 
 /*----Trailer link----*/
 
 /*----Footer----*/
 
 
-/*----Media Screens----*/
+/*----------------------------GIFFY PAGE-----------------------------------=-----*/
+
+
+
+
+
+/*----------------------------YOUTUBE SHORTS--------------------------------------*/
+
+
+
+
+
+
+/*--------------------------------CHARACTER PAGE-----------------------------------*/
+
+/*---------------------Media Screens----------------------------------------------*/
 
 @media screen and (min-width: 480px) and (max-width: 769px) {
     .navbar, .navbar-expand-lg, .navbar-light, .bg-light, .navbar-brand {
@@ -156,8 +151,7 @@ a {
         .logoImg img {
             width: 170px;
             height: 120px;
-            margin-left: 5px;
-            
+            margin-left: 5px;  
         }
 
         #banner {
@@ -181,7 +175,6 @@ a {
 
         #banner {
             margin-right: 20px;
-
         }
     }
 
@@ -200,7 +193,6 @@ a {
 
         #banner {
             margin-right: 30px;
-
         }
     }
 
@@ -219,7 +211,6 @@ a {
 
         #banner {
             margin-right: 50px;
-
         }
     }
 
@@ -239,12 +230,10 @@ a {
 
         #banner {
             margin-right: 130px;
-
         }
 
         a {
             font-size: 1.1rem;
-
         }
     }
 
@@ -263,47 +252,10 @@ a {
 
         #banner {
             margin-right: 100px;
-
         }
 
         a {
             font-size: 1.1rem;
-
         }
     }
 
-
-
-    /* @media screen and (max-width: 1024px) {
-        .navbar, .navbar-expand-lg, .navbar-light, .bg-light, .navbar-brand {
-            flex-direction: column;
-            align-items: flex-start;
-            text-align: left;
-        }
-
-        #banner {
-            /* float: center; */
-            /* float: right; */
-            /* margin-top: 15px;
-            width: 20%;
-            height: 20%;
-            border: solid 1px red;
-        }
-    
-
-    } */
-
-/*----------------------------GIFFY PAGE----------------------------------------*/
-
-
-
-
-
-/*----------------------------YOUTUBE SHORTS----------------------------------------*/
-
-
-
-
-
-
-/*--------------------------------CHARACTER PAGE------------------------------------*/
