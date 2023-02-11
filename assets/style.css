@@ -71,12 +71,14 @@ a {
 .AllHeaders {
     color: #E16907;
     text-align: center;
-    font-display: bold; 
+    font-display: bold;
+    
 }
 
 .h1, h1 {
-    font-size: 1.9rem;
-    margin-top: 5px;  
+    font-size: 2.5rem;
+    margin-top: 5px;
+    /* font-weight: 900px; */
     
 }
 
@@ -102,6 +104,25 @@ a {
 
 /*----Footer----*/
 
+.footer {
+    background-color: #765B49 !important;
+    height: 70px;
+}
+
+/*----coded by----*/
+.small, small {
+    font-size: .775em;
+}
+
+/*----coded by----*/
+.footer p {
+    margin-top: -15px;   
+}
+
+/*----footer icon----*/
+.fa-fw {
+    color: black;
+}
 
 /*----------------------------GIFFY PAGE-----------------------------------=-----*/
 
