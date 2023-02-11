@@ -37,6 +37,11 @@ body {
     margin-top: -40px;
 }
 
+.nav-link {
+    display: block;
+    padding: 0.4rem 1rem;
+}
+
 .navbar-brand {
     margin-right: 0;
 }
@@ -79,12 +84,22 @@ a {
     font-size: 2.5rem;
     margin-top: 5px;
     /* font-weight: 900px; */
-    
 }
 
 /*------Home page introduction----*/
 
 /*-container-*/
+
+.InfoCard1 {
+    margin-top: 15px;
+    margin-bottom: 15px; 
+}
+
+.card-header {
+    background: rgba(236, 86, 11, 0.705);
+
+}
+
 .InfoCard {
     margin-top: 15px;
     margin-bottom: 15px; 
@@ -99,10 +114,23 @@ a {
     background: rgba(221, 220, 218, 0.692);
 }
 
+.card-body {
+    padding-bottom: 10px;
+}
+
+/* .h5 .card-header {
+    position: center;
+} */
+
+
+.btn-primary {
+    background-color: #FF0000;
+    border-color: black;
+}
 
 /*----Trailer link----*/
 
-/*----Footer----*/
+/*-------------Footer----------*/
 
 .footer {
     background-color: #765B49 !important;
@@ -122,6 +150,15 @@ a {
 /*----footer icon----*/
 .fa-fw {
     color: black;
+    margin-bottom: 10px;
+}
+
+.list-inline i {
+    transition: all 0.3s linear;
+}
+
+.list-inline i:hover {
+    color: red;
 }
 
 /*----------------------------GIFFY PAGE-----------------------------------=-----*/
