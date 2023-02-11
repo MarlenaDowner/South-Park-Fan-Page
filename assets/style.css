@@ -13,11 +13,12 @@ body {
 
 /*----HOME Background image---*/
 .background1 {
-    background-image: url('./south-park-25th-anniversay-081222-1bc607f6291e4e1c91e31da1034de47a.webp');
+    background-image: url('./pictures/south-park-25th-anniversay-081222-1bc607f6291e4e1c91e31da1034de47a.webp');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 200% 100%;
     background-position: center;
+    
 }
 
 /*----GIFY Back ground image----*/
@@ -93,7 +94,7 @@ a {
 
 /*-responsive card-*/
 .card {
-    background: rgba(221, 220, 218, 0.555);
+    background: rgba(221, 220, 218, 0.692);
 }
 
 
