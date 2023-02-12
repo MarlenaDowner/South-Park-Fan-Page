@@ -9,162 +9,121 @@
 <!--Bootstrap core CSS-->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
-
-
-<!--Custom style for this template-->
-    <link rel="stylesheet" href="./css/style.css"><!--Custom style for this template-->
-    <link rel="stylesheet" href="./css/style.css">
+<script src="https://kit.fontawesome.com/27e5aba8c6.js" crossorigin="anonymous"></script>
 
 <!--Custom style for this template-->
 <link rel="stylesheet" href="./assets/style.css">
 </head>
 <body>
- <!--Navigation-->
-  
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="#">Navbar</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarNav">
-    <ul class="navbar-nav">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Features</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Pricing</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link disabled">Disabled</a>
-      </li>
-    </ul>
-  </div>
-</nav>
 
-    
-  <!-- GIF API goes in this section -->
-  <section id="gif" class="">
-    <div id="gif-api" class="">
-      <div>
-        <button id="Eric-Cartmen">Eric Cartmen GIF</button>
-  <div id="images">
-  </div>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script type="text/javascript">
-    //
-    $("#Eric-Cartmen").on("click", function() {
+  <!--Back ground div-->
+  <div class="background1">
 
-      //
-      var queryURL = "https://api.giphy.com/v1/gifs/random?api_key=WQeoRa1jNidriRyjk6XSRHDNGr5VSssB&tagdc6zaTOxFJmzC&tag=south-park-eric-cartman&rating=r";
-
-      //
-      $.ajax({
-        url: queryURL,
-        method: "GET"
-      })
-
-      //
-        .then(function(response) {
-
-        //
-        var imageUrl = response.data.images.original.url;
-
-          //
-          var ericImage = $("<img>");
-
-          //
-          ericImage.attr("src", imageUrl);
-          ericImage.attr("alt", "Eric Cartmen");
-
-          //
-          $("#images").prepend(ericImage);
-        });
-    });
-  </script>
-
-  <button id="kyle-broflovski">kyle broflovski GIF</button>
-  <div id="images">
-  </div>
-
-  <script type="text/javascript">
-    //
-    $("#kyle-broflovski").on("click", function() {
-
-      //
-      var queryURL = "https://api.giphy.com/v1/gifs/random?api_key=WQeoRa1jNidriRyjk6XSRHDNGr5VSssB&tagdc6zaTOxFJmzC&tag=south-park-kyle-broflovski&rating=r";
-
-      //
-      $.ajax({
-        url: queryURL,
-        method: "GET"
-      })
-
-      //
-        .then(function(response) {
-
-        //
-        var imageUrl = response.data.images.original.url;
-
-          //
-          var kyleImage = $("<img>");
-
-          //
-          kyleImage.attr("src", imageUrl);
-          kyleImage.attr("alt", "kyle broflovski");
-
-          //
-          $("#images").prepend(kyleImage);
-        });
-    });
-  </script>
+ <!----Navigation---->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">
+      <div class="logoImg">
+        <img src="./assets/pictures/Eric-South-Park-PNG.png" id="mainLogo" alt="Main Logo image" href="#"></a>
+        </div>
+        <div class="bannerlogo">
+        <img src="./assets/pictures/written logo.png" id="banner" alt="Written Logo image">
       </div>
+    </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Giphy</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">YouTube Shorts</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Fun Facts</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Quiz</a>
+        </li>
+      </ul>
     </div>
-    <!--<script>
-      PLACE YOUTUBE API SCRIPT HERE IF YOU WISH
-    </script>-->
-  </section>
+  </nav>
 
-<!-- YOUTUBE API goes in this section -->
-  <section id="youtube" class="youtube">
-    <div id="youtube-api" class="">
-      <div>
-        <h2>Youtube Short of South Park Here</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea necessitatibus, voluptatum voluptate ducimus obcaecati nesciunt! Qui inventore magnam deleniti, tempore quidem, animi debitis, eius modi id nesciunt impedit assumenda quo?</p>
-      </div>
+  <!----Header---->
+  <header>
+    <div class="AllHeaders">
+      <h1>
+        FAN PAGE
+      </h1>
     </div>
-    <!--<script>
-      PLACE YOUTUBE API SCRIPT HERE IF YOU WISH
-    </script>-->
-  </section>
+  </header>
+  <!-----------------------COPY FROM HERE ALL OF ABOVE --------------------------->
 
-  <!-- FUNFact API goes in this section -->
+<!----Youtube Trailer link---->
+<!-- 16:9 aspect ratio -->
+<div class="embed-responsive embed-responsive-16by9">
+  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/L0Df57fRR5o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
+
+<!------Home page info------>
 <section>
-  <section id="funFacts" class="">
-    <div id="funFact-api" class="">
-      <div>
-        <h2>Fun Facts of South Park Here</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea necessitatibus, voluptatum voluptate ducimus obcaecati nesciunt! Qui inventore magnam deleniti, tempore quidem, animi debitis, eius modi id nesciunt impedit assumenda quo?</p>
-      </div>
+  <div class="InfoCard1">
+  <div class="card">
+    <h5 class="card-header">Welcome to South Park Fan Page!</h5>
+    <div class="card-body">
+      <h5 class="card-title">All things South Park and more...</h5>
+      <p class="homeIntro">Lorem ipsum dolor sit amet. Est consequuntur reiciendis sed corporis corporis non doloremque enim non ipsum explicabo rem dolor Quis est minus suscipit. Qui ipsam ipsam non consequatur nulla in temporibus reprehenderit et quisquam nesciunt. Nam quas nostrum aut voluptatem rerum eum quae maiores ex consectetur perferendis ut ipsam natus et recusandae mollitia. Ea dolor provident ab fugiat quas et inventore iure et dolores alias aut illo porro.</p>
+      <a href="#" class="btn btn-primary">YouTube Shorts</a>
     </div>
-    <!--<script>
-      PLACE FUNFact API SCRIPT HERE IF YOU WISH
-    </script>-->
-  </section>
-  
+  </div>
+</div>
 </section>
 
+<section>
+  <div class="InfoCard">
+    <div class="card">
+      <div class="card-body">
+        <p class="homeIntro">
+          Lorem ipsum dolor sit amet. Est consequuntur reiciendis sed corporis corporis non doloremque enim non ipsum explicabo rem dolor Quis est minus suscipit. Qui ipsam ipsam non consequatur nulla in temporibus reprehenderit et quisquam nesciunt. Nam quas nostrum aut voluptatem rerum eum quae maiores ex consectetur perferendis ut ipsam natus et recusandae mollitia. Ea dolor provident ab fugiat quas et inventore iure et dolores alias aut illo porro.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
 
+<!-----------------------COPY FROM HERE--------------------------->
 
-<footer id="footer">
-  <h2>Footer</h2>
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+<!------Footer------>
+<footer class="footer bg-light">
+  <div class="footercontainer">
+    <div class="row">
+      <div class="col-lg-6 h-100 text-center mx-auto" id="footer">
+        <ul class="list-inline">
+          <li class="list-inline-item mr-3">
+            <a href="https://www.youtube.com/watch?v=DCg8Hbok1Ks&t=1120s" id="icon">
+              <i class="bi bi-youtube fa-2x fa-fw"></i>
+            </a>
+            <a href="https://github.com/MarlenaDowner/South-Park-Fan-Page" id="icon">
+              <i class="bi bi-github fa-2x fa-fw"></i>
+            </a>
+          </li>
+        </ul>
+        <p class="small mb-4 mb-lg-0">SOUTH PARK FAN PAGE 2023. Coded by Mark, Marlena, Richard & Yusuf.</p>
+      </div>
+    </div>
+  </div>
 </footer>
+
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+ 
+<!--Back ground div-->
+</div> 
+
 </body>
 </html>
-

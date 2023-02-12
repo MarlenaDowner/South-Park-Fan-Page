@@ -1,26 +1,427 @@
+/*------------Nav Bar, Header Font, Footer will be the SAME for all pages-------------*/
 
+/*-----------HOME PAGE------------*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 
+body {
+  font-family: cursive;
+}
+
+/*----HOME Background image---*/
+.background1 {
+  background-image: url('./pictures/south-park-25th-anniversay-081222-1bc607f6291e4e1c91e31da1034de47a.webp');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 200% 100%;
+  background-position: center;
+  
+}
+
+/*----GIFY Back ground image----*/
+/*----YOUTUBE SHORTS Back ground image----*/
+/*----CHARACTERS Back ground image----*/
+/*----QUIZ Back ground image----*/
+
+/*------Nav Bar-----*/
+
+/*-navbar background-*/
+.bg-light {
+  background-color: #765B49 !important;
+}
+
+.navbar-toggler {
+  margin-top: -40px;
+}
+
+.nav-link {
+  display: block;
+  padding: 0.4rem 1rem;
+}
+
+.navbar-brand {
+  margin-right: 0;
+}
+
+/*-SP Logo left in navbar-*/
 .logoImg {
-    display: flex;
-    flex-direction: row;
-    border: solid 1px red;
-    
+  position: absolute;
+  margin-left: 50px;
 }
 
- #banner {
-    align-items: center;
-    width: 50%;
-    height: 50%;
-    border: solid 1px red;
-}
-
-
+/*-SP Logo left in navbar-*/
 .logoImg img {
-    width: 50px;
-    height: 100px;
-    margin-right: 10px;
-    
+  width: 135px;
+  height: 85px;
+  margin-right: 10px;
 }
+
+/*-SP written logo-*/
+#banner {
+  float: right;
+  margin-top: 15px;
+  width: 60%;
+  height: 60%;
+}
+
+/*-Header-*/
+a {
+  font-display: bold;
+  color: black !important;
+}
+
+.AllHeaders {
+  color: #E16907;
+  text-align: center;
+  font-display: bold;
+  
+}
+
+.h1, h1 {
+  font-size: 2.5rem;
+  margin-top: 5px;
+  /* font-weight: 900px; */
+}
+
+/*------Home page introduction----*/
+
+/*-container-*/
+
+.InfoCard1 {
+  margin-top: 15px;
+  margin-bottom: 15px; 
+}
+
+.card-header {
+  background: rgba(236, 86, 11, 0.705);
+
+}
+
+.InfoCard {
+  margin-top: 15px;
+  margin-bottom: 15px; 
+}
+
+.card-body {
+  padding-bottom: 0px;  
+}
+
+/*-responsive card-*/
+.card {
+  background: rgba(221, 220, 218, 0.692);
+}
+
+.card-body {
+  padding-bottom: 10px;
+}
+
+/* .h5 .card-header {
+  position: center;
+} */
+
+
+.btn-primary {
+  background-color: #FF0000;
+  border-color: black;
+}
+
+/*----Trailer link----*/
+
+/*-------------Footer----------*/
+
+.footer {
+  background-color: #765B49 !important;
+  height: 70px;
+}
+
+/*----coded by----*/
+.small, small {
+  font-size: .775em;
+}
+
+/*----coded by----*/
+.footer p {
+  margin-top: -15px;   
+}
+
+/*----footer icon----*/
+.fa-fw {
+  color: black;
+  margin-bottom: 10px;
+}
+
+.list-inline i {
+  transition: all 0.3s linear;
+}
+
+.list-inline i:hover {
+  color: red;
+}
+
+/*----------------------------GIFFY PAGE-----------------------------------=-----*/
+#body {
+  background-image: url("../images/StanP.png");
+  position: relative;
+  background-repeat: round;
+  z-index: -1;
+}
+
+.gifImage {
+  align-items: center;
+}
+
+#gifGrid {
+  border: 2px solid #d61039;
+  margin: 0px 5%;
+  display: grid;
+  background-color: #000000;
+  min-height: 500px;
+  height: 70vh;
+  grid-template-rows: 25% 25% 25% 25%;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-areas: 
+  " gifArea gifArea gifArea cartmenArea"
+  " gifArea gifArea gifArea kyleArea"
+  " gifArea gifArea gifArea stanArea"
+  "gifLinkArea gifLinkArea gifLinkArea kennyArea";
+}
+
+#gifArea {
+  position: absolute;
+  border: 2px solid rgb(37, 230, 244);
+  background-color: black;
+  text-align: start;
+  grid-area: gifArea;
+  background-image: url("../images/logo.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: +1;
+}
+
+#cartmanArea {
+  border: 2px solid rgb(37, 230, 244);
+  grid-area: cartmenArea;
+  background-image: url("../images/CartmenP.png");
+  background-size: 120%;
+  background-repeat: round;
+  image-rendering: unset;
+  z-index: +2;
+  cursor: pointer;
+}
+
+#kyleArea {
+  border: 2px solid rgb(37, 230, 244);
+  grid-area: kyleArea;
+  background-image: url("../images/KyleP.png");
+  background-size: 120%;
+  background-repeat: round;
+  z-index: +2;
+  cursor: pointer;
+}
+
+#stanArea {
+  border: 2px solid rgb(37, 230, 244);
+  grid-area: stanArea;
+  background-image: url("../images/StanP.png");
+  background-size: 120%;
+  background-repeat: round;
+  z-index: +2;
+  cursor: pointer;
+}
+
+#kennyArea {
+  border: 2px solid rgb(37, 230, 244);
+  border-width: 2px;
+  grid-area: kennyArea;
+  background-image: url("../images/KennyP.png");
+  background-size: 140%;
+  background-repeat: round;
+  z-index: +2;
+  cursor: pointer;
+}
+
+#gifLinkArea {
+  border: 2px solid rgb(37, 230, 244);
+  grid-area: gifLinkArea;
+  background-image: url("../images/KennyP.png");
+  background-size: 100%;
+  background-repeat: round;
+  z-index: +2;
+}
+
+.button {
+  grid-area: span;
+}
+.box {
+  position: relative;
+}
+.basic {
+  box-shadow: 10px 8px 10px 5px rgb(73, 219, 245);
+}
+
+.shadow:before {
+  content:"";
+  position: absolute;
+  inset: -5px;
+  transform: translate(10px,8px);
+  z-index: -1;
+  background: conic-gradient(from 90deg at 40% -25%, #2ef1f4, #49fda9, #1bdf70, #48f7d4, #0baf91, #3aebd4, #31b8e6, #1169dc, #1a3ce1, #70cfff, #74ffa7, #68acff, #8cffe0, #37f994, #2dfff1, hsl(180, 100%, 50%));
+  filter: blur(10px);
+}
+
+/*----------------------------YOUTUBE SHORTS--------------------------------------*/
+
+
+
+
+
+
+/*--------------------------------CHARACTER PAGE-----------------------------------*/
+
+/*---------------------Media Screens----------------------------------------------*/
+
+@media screen and (min-width: 480px) and (max-width: 769px) {
+  .navbar, .navbar-expand-lg, .navbar-light, .bg-light, .navbar-brand {
+      flex-direction: column;
+      align-items: flex-start;
+      text-align: left;
+  }
+}
+
+  @media  screen and (min-width: 580px) and (max-width: 769px) {
+      .navbar, .navbar-expand-lg, .navbar-light, .bg-light, .navbar-brand {
+          flex-direction: column;
+          align-items: flex-start;
+          text-align: left;
+      }
+      
+      .logoImg img {
+          width: 150px;
+          height: 100px;
+          margin-left: 15px;
+      }
+  }
+
+  @media  screen and (min-width: 680px) and (max-width: 769px) {
+      .navbar, .navbar-expand-lg, .navbar-light, .bg-light, .navbar-brand {
+          flex-direction: column;
+          align-items: flex-start;
+          text-align: left;
+      }
+      
+      .logoImg img {
+          width: 170px;
+          height: 120px;
+          margin-left: 5px;  
+      }
+
+      #banner {
+          margin-right: 16px;
+
+      }
+  }
+
+  @media  screen and (min-width: 769px) and (max-width: 1280px) {
+      .navbar, .navbar-expand-lg, .navbar-light, .bg-light, .navbar-brand {
+          flex-direction: column;
+          align-items: flex-start;
+          text-align: left;
+      }
+
+      .logoImg img {
+          width: 190px;
+          height: 135px;
+          margin-left: 25px;
+      }
+
+      #banner {
+          margin-right: 20px;
+      }
+  }
+
+  @media  screen and (min-width: 880px) and (max-width: 1280px) {
+      .navbar, .navbar-expand-lg, .navbar-light, .bg-light, .navbar-brand {
+          flex-direction: column;
+          align-items: flex-start;
+          text-align: left;
+      }
+
+      .logoImg img {
+          width: 210px;
+          height: 150px;
+          margin-left: 25px;
+      }
+
+      #banner {
+          margin-right: 30px;
+      }
+  }
+
+  @media  screen and (min-width: 1000px) and (max-width: 1280px) {
+      .navbar, .navbar-expand-lg, .navbar-light, .bg-light, .navbar-brand {
+          flex-direction: column;
+          align-items: flex-start;
+          text-align: left;
+      }
+
+      .logoImg img {
+          width: 230px;
+          height: 170px;
+          margin-left: 25px;
+      }
+
+      #banner {
+          margin-right: 50px;
+      }
+  }
+
+
+  @media  screen and (min-width: 1280px) and (max-width: 1350px) {
+      .navbar, .navbar-expand-lg, .navbar-light, .bg-light, .navbar-brand {
+          flex-direction: column;
+          align-items: flex-start;
+          text-align: left;
+      }
+
+      .logoImg img {
+          width: 260px;
+          height: 190px;
+          margin-left: -20px;
+      }
+
+      #banner {
+          margin-right: 130px;
+      }
+
+      a {
+          font-size: 1.1rem;
+      }
+  }
+
+  @media  screen and (min-width: 1350px) and (max-width: 2000px) {
+      .navbar, .navbar-expand-lg, .navbar-light, .bg-light, .navbar-brand {
+          flex-direction: column;
+          align-items: flex-start;
+          text-align: left;
+      }
+
+      .logoImg img {
+          width: 260px;
+          height: 190px;
+          margin-left: -20px;
+      }
+
+      #banner {
+          margin-right: 100px;
+      }
+
+      a {
+          font-size: 1.1rem;
+      }
+  }
 
 #youtube {
     width: 100%;
@@ -31,20 +432,14 @@
     align-items: center;
 }
 
-#gif {
-    width: 100%;
-    height: 350px;
-    border: solid 1px red;
-    padding-left: 20px;
-    display:flex;
-    align-items: center;
-}
+
+
 
 #funFacts {
     width: 100%;
     height: 350px;
     border: solid 1px red;
-    padding-left: 20px;
+    padding: 20px;
     display:flex;
     align-items: center;
 }
@@ -54,3 +449,13 @@
     height: 100%;
     border: solid 1px red;
 }
+
+#footer-section {
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-bottom: 2%;
+    padding-top: 2%;
+    text-align: center;
+}
+
+
