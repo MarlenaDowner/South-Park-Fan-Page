@@ -81,14 +81,14 @@ a {
 }
 
 .h1, h1 {
-    font-size: 2.5rem;
+    font-size: 2.0rem;
     margin-top: 5px;
     /* font-weight: 900px; */
 }
 
 /*------Home page introduction----*/
 
-/*-container-*/
+/*--card container--*/
 
 .InfoCard1 {
     margin-top: 15px;
@@ -124,8 +124,9 @@ a {
 
 
 .btn-primary {
-    background-color: #FF0000;
+    background-color: #E16907;
     border-color: black;
+    color: black;
 }
 
 /*----Trailer link----*/
@@ -134,17 +135,21 @@ a {
 
 .footer {
     background-color: #765B49 !important;
-    height: 70px;
+    height: 135px; /*----this was 70----*/
 }
 
 /*----coded by----*/
 .small, small {
-    font-size: .775em;
+    font-size: .700em;
 }
 
 /*----coded by----*/
 .footer p {
-    margin-top: -15px;   
+    margin-top: 5px;   /*----this was -15----*/
+}
+
+#characters {
+    margin-top: -10px;
 }
 
 /*----footer icon----*/
