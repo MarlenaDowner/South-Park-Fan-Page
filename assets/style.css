@@ -174,7 +174,7 @@ a {
   border: 2px solid #d61039;
   margin: 0px 5%;
   display: grid;
-  background-color: #000000;
+  background-color: #00000060;
   min-height: 500px;
   height: 70vh;
   grid-template-rows: 25% 25% 25% 25%;
@@ -183,12 +183,13 @@ a {
   " gifArea gifArea gifArea cartmenArea"
   " gifArea gifArea gifArea kyleArea"
   " gifArea gifArea gifArea stanArea"
-  "gifLinkArea gifLinkArea gifLinkArea kennyArea";
+  "gifLinkArea alienArea randyArea kennyArea";
 }
 
 img {
-  max-width: 99%;
-  height: 99%;
+  width: 100%;
+  height: 100%;
+  position: absolute;
 }
 
 #gifArea {
@@ -208,38 +209,41 @@ img {
 }
 
 #cartmanArea {
-  border: 2px solid rgb(37, 230, 244, 0.517);
+  border: 4px solid rgb(161, 177, 177);
   grid-area: cartmenArea;
   background-image: url("../images/CartmenP.png");
   background-size: 120%;
   background-repeat: round;
   image-rendering: unset;
   z-index: +2;
-  cursor: pointer;;
+  cursor: pointer;
+  border-radius: 100px;
 }
 
 #kyleArea {
-  border: 2px solid rgb(37, 230, 244, 0.517);
+  border: 4px solid rgb(161, 177, 177);
   grid-area: kyleArea;
   background-image: url("../images/KyleP.png");
   background-size: 120%;
   background-repeat: round;
   z-index: +2;
   cursor: pointer;
+  border-radius: 100px;
 }
 
 #stanArea {
-  border: 2px solid rgb(37, 230, 244, 0.517);
+  border: 4px solid rgb(161, 177, 177);
   grid-area: stanArea;
   background-image: url("../images/StanP.png");
   background-size: 120%;
   background-repeat: round;
   z-index: +2;
   cursor: pointer;
+  border-radius: 100px;
 }
 
 #kennyArea {
-  border: 2px solid rgb(37, 230, 244, 0.517);
+  border: 4px solid rgb(161, 177, 177);
   border-width: 2px;
   grid-area: kennyArea;
   background-image: url("../images/KennyP.png");
@@ -247,6 +251,31 @@ img {
   background-repeat: round;
   z-index: +2;
   cursor: pointer;
+  border-radius: 100px;
+}
+
+#randyArea {
+  border: 4px solid rgb(161, 177, 177);
+  border-width: 2px;
+  grid-area: randyArea;
+  background-image: url("../images/randyimg.png");
+  background-size: 140%;
+  background-repeat: round;
+  z-index: +2;
+  cursor: pointer;
+  border-radius: 100px;
+}
+
+#alienArea {
+  border: 4px solid rgb(161, 177, 177);
+  border-width: 2px;
+  grid-area: alienArea;
+  background-image: url("../images/Screenshot\ 2023-02-14\ at\ 19.26.27.png");
+  background-size: 140%;
+  background-repeat: round;
+  z-index: +2;
+  cursor: pointer;
+  border-radius: 100px;
 }
 
 #gifLinkArea {
@@ -277,6 +306,8 @@ img {
   background: conic-gradient(from 90deg at 40% -25%, #2ef1f4, #49fda9, #1bdf70, #48f7d4, #0baf91, #3aebd4, #31b8e6, #1169dc, #1a3ce1, #70cfff, #74ffa7, #68acff, #8cffe0, #37f994, #2dfff1, hsl(180, 100%, 50%));
   filter: blur(10px);
 }
+
+
 
 
 

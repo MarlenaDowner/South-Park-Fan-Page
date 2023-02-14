@@ -1,0 +1,41 @@
+<div id="NAMEArea" class="gifGridArea" onclick="reset('gifArea')">
+    <div id="NAMEHeading" class="selections"></div>
+    <h4 id="NAME" class="button" onclick="reset('gifArea')" style="color: white; font-weight: bold; background-color: rgba(0, 0, 0, 0.578); text-align: center;">BLANK</h4>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript">
+    function reset(gifArea)
+{
+  document.getElementById(gifArea).innerHTML = "";
+}
+    
+    
+    //
+    $("#ANAMErea").on("click", function() {
+      //
+      var queryURL = "https://api.giphy.com/v1/gifs/random?api_key=WQeoRa1jNidriRyjk6XSRHDNGr5VSssB&tagdc6zaTOxFJmzC&tag=south-park-&rating=r";
+
+      //
+      $.ajax({
+        url: queryURL,
+        method: "GET"
+      })
+      
+      //
+        .then(function(response) {
+        //
+        var imageUrl = response.data.images.original.url;
+
+          //
+          var NAMEImage = $("<img>");
+
+          //
+          NAMEImage.attr("src", imageUrl);
+          NAMEImage.attr("alt", "NAME");
+
+          //
+          $("#gifArea").prepend(NAMEImage);
+        });
+    });
+  </script>
+  </div>

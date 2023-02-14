@@ -45,10 +45,14 @@
   <!-- GIF API goes in this section -->
   <section style="max-width: 900px; justify-content: center; margin: 0 auto;" class="container" >
   <h1 style="text-align: center; color: aliceblue; background-color: rgba(0, 0, 0, 0.586); margin-left: 23%; margin-right: 23%; border: 2px solid rgba(127, 255, 212, 0.673);"">GIF GENERATOR</h1>
-  <section id="gifGrid" class="box shadow" style="height: 10vh; ">
+
+
+  <!-- CARTMAN AREA-->
+
+  <div id="gifGrid" class="box shadow">
     <div id="cartmanArea" class="gifGridArea" onclick="reset('gifArea')" >
       <div id="cartmenHeading" class="selections"></div>
-      <h4 id="Eric-Cartman" class="button" onclick="reset('gifArea')" style="color: white; font-weight: bold; background-color: rgba(0, 0, 0, 0.578); text-align: center;">Cartman</h4>
+      <h4 id="Eric-Cartman" class="button" onclick="reset('gifArea')" style="color: white; font-weight: bold; background-color: rgba(0, 0, 0, 0.578); text-align: center;">Eric</h4>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript">
@@ -127,7 +131,7 @@
           });
       });
     </script>
-    
+
     <div id="stanArea" class="gifGridArea" onclick="reset('gifArea')">
       <div id="stanHeading" class="selections"></div>
       <h4 id="stan-marsh" class="button" onclick="reset('gifArea')" style="color: white; font-weight: bold; background-color: rgba(0, 0, 0, 0.578); text-align: center;">Stan</h4></div>
@@ -167,6 +171,8 @@
             });
         });
       </script>
+
+
     
     <div id="kennyArea" class="gifGridArea" onclick="reset('gifArea')">
       <div id="kennyHeading" class="selections"></div>
@@ -208,7 +214,90 @@
           });
       });
     </script>
+
+    <div id="randyArea" class="gifGridArea" onclick="reset('gifArea')">
+      <div id="randyHeading" class="selections"></div>
+      <h4 id="randy-marsh" class="button" onclick="reset('gifArea')" style="color: white; font-weight: bold; background-color: rgba(0, 0, 0, 0.578); text-align: center;">Randy</h4>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript">
+      function reset(gifArea)
+  {
+    document.getElementById(gifArea).innerHTML = "";
+  }
+      
+      
+      //
+      $("#randyArea").on("click", function() {
+        //
+        var queryURL = "https://api.giphy.com/v1/gifs/random?api_key=WQeoRa1jNidriRyjk6XSRHDNGr5VSssB&tagdc6zaTOxFJmzC&tag=randy-marsh&rating=r";
+  
+        //
+        $.ajax({
+          url: queryURL,
+          method: "GET"
+        })
+        
+        //
+          .then(function(response) {
+          //
+          var imageUrl = response.data.images.original.url;
+  
+            //
+            var randyImage = $("<img>");
+  
+            //
+            randyImage.attr("src", imageUrl);
+            randyImage.attr("alt", "randy");
+  
+            //
+            $("#gifArea").prepend(randyImage);
+          });
+      });
+    </script>
+
+<div id="alienArea" class="gifGridArea" onclick="reset('gifArea')">
+  <div id="alienHeading" class="selections"></div>
+  <h4 id="alien" class="button" onclick="reset('gifArea')" style="color: white; font-weight: bold; background-color: rgba(0, 0, 0, 0.578); text-align: center;">Alien</h4>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript">
+  function reset(gifArea)
+{
+document.getElementById(gifArea).innerHTML = "";
+}
+  
+  
+  //
+  $("#alienArea").on("click", function() {
+    //
+    var queryURL = "https://api.giphy.com/v1/gifs/random?api_key=WQeoRa1jNidriRyjk6XSRHDNGr5VSssB&tagdc6zaTOxFJmzC&tag=south-park-anal-probe&rating=r";
+
+    //
+    $.ajax({
+      url: queryURL,
+      method: "GET"
+    })
     
+    //
+      .then(function(response) {
+      //
+      var imageUrl = response.data.images.original.url;
+
+        //
+        var alienImage = $("<img>");
+
+        //
+        alienImage.attr("src", imageUrl);
+        alienImage.attr("alt", "alien");
+
+        //
+        $("#gifArea").prepend(alienImage);
+      });
+  });
+</script>
+
+
     <div id="gifArea" class="gifGridArea" onreset="resetGif()">
       <div id="gifHeading"></div>
       <iframe width="100%" height="400" src="https://www.youtube.com/embed/lqvUuMpU554?start=8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" style="margin: 0 auto;" allowfullscreen></iframe>
