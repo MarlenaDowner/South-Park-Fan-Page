@@ -183,7 +183,7 @@ a {
 
 /*--------------------------------CHARACTER PAGE-----------------------------------*/
 
-/*---------------------Media Screens----------------------------------------------*/
+/*---------------------------Home page Media Screens----------------------------------------------*/
 
 @media screen and (min-width: 480px) and (max-width: 769px) {
     .navbar, .navbar-expand-lg, .navbar-light, .bg-light, .navbar-brand {
