@@ -21,8 +21,11 @@ body {
 }
 
 /*----GIFY Back ground image----*/
+
 /*----YOUTUBE SHORTS Back ground image----*/
+
 /*----CHARACTERS Back ground image----*/
+
 /*----QUIZ Back ground image----*/
 
 /*------Nav Bar-----*/
@@ -117,11 +120,6 @@ a {
     padding-bottom: 10px;
 }
 
-/* .h5 .card-header {
-    position: center;
-} */
-
-
 .btn-primary {
     background-color: #E16907;
     border-color: black;
@@ -149,8 +147,6 @@ a {
 
 #characters {
     margin-top: -10px;
-    /* width: 200px; */
-    /* height: 100px; */
 }
 
 /*----footer icon----*/
