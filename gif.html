@@ -42,15 +42,13 @@
   </div>
 </nav>
 
-<div class="box basic"></div>
-
-
   <!-- GIF API goes in this section -->
-  <h1>GIF GENERATOR</h1>
-  <section id="gifGrid" class="box shadow">
+  <section style="max-width: 900px; justify-content: center; margin: 0 auto;" class="container" >
+  <h1 style="text-align: center; color: aliceblue; background-color: rgba(0, 0, 0, 0.586); margin-left: 23%; margin-right: 23%; border: 2px solid rgba(127, 255, 212, 0.673);"">GIF GENERATOR</h1>
+  <section id="gifGrid" class="box shadow" style="height: 10vh; ">
     <div id="cartmanArea" class="gifGridArea" onclick="reset('gifArea')" >
       <div id="cartmenHeading" class="selections"></div>
-      <button id="Eric-Cartman" class="button" onclick="reset('gifArea')">Cartman GIF</button>
+      <h4 id="Eric-Cartman" class="button" onclick="reset('gifArea')" style="color: white; font-weight: bold; background-color: rgba(0, 0, 0, 0.578); text-align: center;">Cartman</h4>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript">
@@ -91,7 +89,7 @@
   
     <div id="kyleArea" class="gifGridArea" onclick="reset('gifArea')">
       <div id="kyleHeading" class="selections"></div>
-      <button id="kyle-broflovski" class="button" onclick="reset('gifArea')">Kyle GIF</button>
+      <h4 id="kyle-broflovski" class="button" onclick="reset('gifArea')" style="color: white; font-weight: bold; background-color: rgba(0, 0, 0, 0.578); text-align: center;">Kyle</h4>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript">
@@ -129,10 +127,10 @@
           });
       });
     </script>
-    </div>
+    
     <div id="stanArea" class="gifGridArea" onclick="reset('gifArea')">
       <div id="stanHeading" class="selections"></div>
-      <button id="stan-marsh" class="button" onclick="reset('gifArea')">Stan GIF</button></div>
+      <h4 id="stan-marsh" class="button" onclick="reset('gifArea')" style="color: white; font-weight: bold; background-color: rgba(0, 0, 0, 0.578); text-align: center;">Stan</h4></div>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
       <script type="text/javascript">
         function reset(gifArea)
@@ -169,10 +167,10 @@
             });
         });
       </script>
-    </div>
+    
     <div id="kennyArea" class="gifGridArea" onclick="reset('gifArea')">
       <div id="kennyHeading" class="selections"></div>
-      <button id="kenny-mccormick" class="button" onclick="reset('gifArea')">Kenny GIF</button>
+      <h4 id="kenny-mccormick" class="button" onclick="reset('gifArea')" style="color: white; font-weight: bold; background-color: rgba(0, 0, 0, 0.578); text-align: center;">Kenny</h4>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript">
@@ -185,7 +183,7 @@
       //
       $("#kennyArea").on("click", function() {
         //
-        var queryURL = "https://api.giphy.com/v1/gifs/random?api_key=WQeoRa1jNidriRyjk6XSRHDNGr5VSssB&tagdc6zaTOxFJmzC&tag=south-park-kenny&rating=r";
+        var queryURL = "https://api.giphy.com/v1/gifs/random?api_key=WQeoRa1jNidriRyjk6XSRHDNGr5VSssB&tagdc6zaTOxFJmzC&tag=killed-kenny&rating=r";
   
         //
         $.ajax({
@@ -210,9 +208,10 @@
           });
       });
     </script>
-    </div>
+    
     <div id="gifArea" class="gifGridArea" onreset="resetGif()">
-      <div id="gifHeading">GIF Display</div>
+      <div id="gifHeading"></div>
+      <iframe width="100%" height="400" src="https://www.youtube.com/embed/lqvUuMpU554?start=8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" style="margin: 0 auto;" allowfullscreen></iframe>
     </div>
     <div id="gifLinkArea" class="gifGridArea">
       <div class="gifLinkHeading">Link Display</div>
@@ -250,6 +249,7 @@
 
 
 </section>
+
 
 
 
