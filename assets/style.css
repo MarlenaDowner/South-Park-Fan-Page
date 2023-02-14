@@ -323,4 +323,14 @@ a {
         }
     }
 
-    .bg-image{ background-image: url(../assets/pictures/fact-page-backdrop.png); background-size: cover; background-repeat: no-repeat; height: 150vh; max-width: 100%; }
+    .background4 {
+        background-image: url('./pictures/fact-page-backdrop.png');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 200% 100%;
+        background-position: center;
+    }
+
+    .card-header {
+        background: rgba(236, 86, 11, 0.705);
+    }
