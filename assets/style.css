@@ -60,7 +60,7 @@ body {
 }
 
 /*-SP written logo-*/
- #banner {
+#banner {
     float: right;
     margin-top: 15px;
     width: 60%;
@@ -105,9 +105,6 @@ a {
     margin-bottom: 15px; 
 }
 
-.card-body {
-    padding-bottom: 0px;  
-}
 
 /*-responsive card-*/
 .card {
@@ -180,6 +177,14 @@ a {
 
 
 /*--------------------------------CHARACTER PAGE-----------------------------------*/
+
+.background4 {
+    background-image: url('./pictures/fact-page-backdrop.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 200% 100%;
+    background-position: center;
+}
 
 /*---------------------Media Screens----------------------------------------------*/
 
@@ -323,14 +328,4 @@ a {
         }
     }
 
-    .background4 {
-        background-image: url('./pictures/fact-page-backdrop.png');
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-size: 200% 100%;
-        background-position: center;
-    }
 
-    .card-header {
-        background: rgba(236, 86, 11, 0.705);
-    }
