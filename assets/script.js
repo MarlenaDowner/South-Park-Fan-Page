@@ -1,4 +1,4 @@
-// FUN FACT PAGE vvvvvvv
+// FUN FACT PAGE ------------
 
 var cartmanImg = document.getElementById("cartman");
 var kennyImg = document.getElementById("kenny");
@@ -26,3 +26,5 @@ stanImg.addEventListener("click", () =>{
 cardText.textContent = "Text for Stan";
 chosenImg.src ="../South-Park-Fan-Page/assets/pictures/stan.png"
 });
+
+// ------------------
