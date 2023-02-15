@@ -8,22 +8,26 @@ var cardText = document.getElementById("card-text");
 var chosenImg = document.getElementById("abc");
 
 cartmanImg.addEventListener("click", () => {
-cardText.textContent = "Text for Cartman";
+cardText.textContent =
+"Text for Cartman";
 chosenImg.src ="../South-Park-Fan-Page/assets/pictures/cartman.png"
 });
 
 kennyImg.addEventListener("click", () => {
-cardText.textContent = "Text for Kenny";
+cardText.textContent =
+"Text for Kenny";
 chosenImg.src ="../South-Park-Fan-Page/assets/pictures/kenny.png"
 });
 
 kyleImg.addEventListener("click", () => {
-cardText.textContent = "Text for Kyle";
+cardText.textContent = 
+"Text for Kyle";
 chosenImg.src ="../South-Park-Fan-Page/assets/pictures/kyle.png"
 });
 
 stanImg.addEventListener("click", () =>{
-cardText.textContent = "Text for Stan";
+cardText.textContent = 
+"Text for Stan";
 chosenImg.src ="../South-Park-Fan-Page/assets/pictures/stan.png"
 });
 
