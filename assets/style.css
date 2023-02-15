@@ -21,6 +21,14 @@ body {
   
 }
 
+/*----GIFY Back ground image----*/
+/*----YOUTUBE SHORTS Back ground image----*/
+/*----CHARACTERS Back ground image----*/
+/*----QUIZ Back ground image----*/
+
+/*------Nav Bar-----*/
+
+/*-navbar background-*/
 .bg-light {
   background-color: #765B49 !important;
 }
@@ -142,6 +150,8 @@ a {
 
 #characters {
   margin-top: -10px;
+  /* width: 200px; */
+  /* height: 100px; */
 }
 
 /*----footer icon----*/
@@ -159,6 +169,7 @@ a {
 }
 
 /*----------------------------GIFFY PAGE-----------------------------------=-----*/
+
 
 .gifImage {
   align-items: center;
@@ -189,7 +200,8 @@ a {
   "randomArea alienArea randyArea kennyArea";
 }
 
-img {
+
+#playGif {
   width: 100%;
   height: 100%;
   position: absolute;
@@ -267,7 +279,6 @@ img {
 
 
 
-
 /*----------------------------YOUTUBE SHORTS--------------------------------------*/
 
 
@@ -278,9 +289,6 @@ img {
 /*--------------------------------CHARACTER PAGE-----------------------------------*/
 
 /*---------------------Media Screens----------------------------------------------*/
-
-
-
 
 @media screen and (min-width: 480px) and (max-width: 769px) {
   .navbar, .navbar-expand-lg, .navbar-light, .bg-light, .navbar-brand {
