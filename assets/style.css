@@ -283,7 +283,18 @@ a {
 
 /*--------------------------------CHARACTER PAGE-----------------------------------*/
 
-/*---------------------------Home page Media Screens----------------------------------------------*/
+.background4 {
+    background-image: url('./pictures/fact-page-backdrop.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 200% 100%;
+    background-position: center;
+}
+
+
+
+
+/*---------------------Media Screens----------------------------------------------*/
 
 @media screen and (min-width: 480px) and (max-width: 769px) {
     .navbar, .navbar-expand-lg, .navbar-light, .bg-light, .navbar-brand {
