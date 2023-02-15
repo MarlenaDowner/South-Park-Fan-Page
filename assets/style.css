@@ -159,22 +159,25 @@ a {
 }
 
 /*----------------------------GIFFY PAGE-----------------------------------=-----*/
-#body {
-  background-image: url("../images/StanP.png");
-  position: relative;
-  background-repeat: round;
-  z-index: -1;
-}
 
 .gifImage {
   align-items: center;
 }
 
+.gifGridArea {
+  border: 4px;
+  background-size: 120%;
+  background-repeat: round;
+  image-rendering: unset;
+  z-index: +2;
+  cursor: pointer;
+  border-radius: 100px;
+}
+
 #gifGrid {
-  border: 2px solid #d61039;
   margin: 0px 5%;
   display: grid;
-  background-color: #00000060;
+  background-color: #ffffff60;
   min-height: 500px;
   height: 70vh;
   grid-template-rows: 25% 25% 25% 25%;
@@ -183,7 +186,7 @@ a {
   " gifArea gifArea gifArea cartmenArea"
   " gifArea gifArea gifArea kyleArea"
   " gifArea gifArea gifArea stanArea"
-  "gifLinkArea alienArea randyArea kennyArea";
+  "randomArea alienArea randyArea kennyArea";
 }
 
 img {
@@ -195,10 +198,8 @@ img {
 #gifArea {
   min-height: 100%;
   min-width: 100%;
-  max-width: 100vw;
-  max-height: 100%;
   position: absolute;
-  border: 2px solid rgba(37, 230, 244, 0.517);
+  border: 2px;
   background-color: black;
   text-align: start;
   grid-area: gifArea;
@@ -209,82 +210,39 @@ img {
 }
 
 #cartmanArea {
-  border: 4px solid rgb(161, 177, 177);
   grid-area: cartmenArea;
-  background-image: url("../images/CartmenP.png");
-  background-size: 120%;
-  background-repeat: round;
-  image-rendering: unset;
-  z-index: +2;
-  cursor: pointer;
-  border-radius: 100px;
+  background-image: url("../images/pngwing.com\ \(4\).png");
+  
 }
 
 #kyleArea {
-  border: 4px solid rgb(161, 177, 177);
   grid-area: kyleArea;
-  background-image: url("../images/KyleP.png");
-  background-size: 120%;
-  background-repeat: round;
-  z-index: +2;
-  cursor: pointer;
-  border-radius: 100px;
+  background-image: url("../images/pngwing.com\ \(3\).png");
 }
 
 #stanArea {
-  border: 4px solid rgb(161, 177, 177);
   grid-area: stanArea;
-  background-image: url("../images/StanP.png");
-  background-size: 120%;
-  background-repeat: round;
-  z-index: +2;
-  cursor: pointer;
-  border-radius: 100px;
+  background-image: url("../images/StanP.webp");
 }
 
 #kennyArea {
-  border: 4px solid rgb(161, 177, 177);
-  border-width: 2px;
   grid-area: kennyArea;
-  background-image: url("../images/KennyP.png");
-  background-size: 140%;
-  background-repeat: round;
-  z-index: +2;
-  cursor: pointer;
-  border-radius: 100px;
+  background-image: url("../images/kisspng-kenny-mccormick-stan-marsh-eric-cartman-kyle-brofl-the-simpsons-movie-5acd4ee617a2e4.3338368515234045180968.png");
 }
 
 #randyArea {
-  border: 4px solid rgb(161, 177, 177);
-  border-width: 2px;
   grid-area: randyArea;
-  background-image: url("../images/randyimg.png");
-  background-size: 140%;
-  background-repeat: round;
-  z-index: +2;
-  cursor: pointer;
-  border-radius: 100px;
+  background-image: url("../images/kisspng-randy-and-sharon-marsh-kyle-broflovski-stan-marsh-first-appearance-5b52cfe6e3d409.2266863115321538309332.png");
 }
 
 #alienArea {
-  border: 4px solid rgb(161, 177, 177);
-  border-width: 2px;
   grid-area: alienArea;
-  background-image: url("../images/Screenshot\ 2023-02-14\ at\ 19.26.27.png");
-  background-size: 140%;
-  background-repeat: round;
-  z-index: +2;
-  cursor: pointer;
-  border-radius: 100px;
+  background-image: url("../images/pngwing.com\ \(1\).png");
 }
 
-#gifLinkArea {
-  border: 2px solid rgb(37, 230, 244);
-  grid-area: gifLinkArea;
-  background-image: url("../images/KennyP.png");
-  background-size: 100%;
-  background-repeat: round;
-  z-index: +2;
+#randomArea {
+  grid-area: randomArea;
+  background-image: url("../images/pngwing.com.png");
 }
 
 .button {
@@ -303,7 +261,6 @@ img {
   inset: -5px;
   transform: translate(10px,8px);
   z-index: -1;
-  background: conic-gradient(from 90deg at 40% -25%, #2ef1f4, #49fda9, #1bdf70, #48f7d4, #0baf91, #3aebd4, #31b8e6, #1169dc, #1a3ce1, #70cfff, #74ffa7, #68acff, #8cffe0, #37f994, #2dfff1, hsl(180, 100%, 50%));
   filter: blur(10px);
 }
 
@@ -323,41 +280,6 @@ img {
 /*---------------------Media Screens----------------------------------------------*/
 
 
-
-#youtube {
-    width: 100%;
-    height: 350px;
-    border: solid 1px red;
-    padding-left: 20px;
-    display:flex;
-    align-items: center;
-}
-
-
-
-
-#funFacts {
-    width: 100%;
-    height: 350px;
-    border: solid 1px red;
-    padding: 20px;
-    display:flex;
-    align-items: center;
-}
-
-#footer {
-    width: 100%;
-    height: 100%;
-    border: solid 1px red;
-}
-
-#footer-section {
-    padding-left: 3%;
-    padding-right: 3%;
-    padding-bottom: 2%;
-    padding-top: 2%;
-    text-align: center;
-}
 
 
 @media screen and (min-width: 480px) and (max-width: 769px) {
