@@ -1,107 +1,17 @@
-# South-Park-Fan-Page
-South-Park-Fan-Page
+------ GIF README Section ------
 
+After initial idea discussion with the Team we put together wire frames of our idea's so we had an idea of what our target design is. 
+The purpose of our fan page is to have easy access to the little reminders of their favourite episodes, and my input in the fiels is to create the GIF Generator within the starter code provided by Marlena. This starter code included the nav ba menu with burger menu for smaller size screens, the footer and websites background image as well as @media css code for different screen sizes. 
 
-.gifImage {
-  align-items: center;
-}
+Now I have the basic layout of the South Park Fan Page I will use html code to create the different elements within my section/page. This includes a display section for the GIF's generated and then to create a simple user interface where the the user can select the GIF generator to produce GIF's based on a specific character. for example, I will create some form of button where the user can select the character Kenny and all GIF's displayed to be based on 'OMG they killed Kenny".
 
-.gifGridArea {
-  border: 4px;
-  background-size: 120%;
-  background-repeat: round;
-  image-rendering: unset;
-  z-index: +2;
-  cursor: pointer;
-  border-radius: 100px;
-}
+In the HTML I will create a Header to advise the user this is the GIF section, so it will have a header element for the title and then a second element below the header where the GIF link can be displayed further down the line. Then I will start by adding 1 div element which will contain the 4 seperate div elements for characters Eric, Stan, Kyle & Kenny as well as the display section. I instend to use CSS flex display to organise these divs when displayed on the website. Within each character div I will add a div for the button in the user interface, I later remove these buttons as well as the div as I use character images as button or options. I will then add h4 headings for each character and add css code within the element to change visual of h4. 
 
-#gifGrid {
-  margin: 0px 5%;
-  display: grid;
-  background-color: #ffffff60;
-  min-height: 500px;
-  height: 70vh;
-  grid-template-rows: 25% 25% 25% 25%;
-  grid-template-columns: 25% 25% 25% 25%;
-  grid-template-areas: 
-  " gifArea gifArea gifArea cartmenArea"
-  " gifArea gifArea gifArea kyleArea"
-  " gifArea gifArea gifArea stanArea"
-  "randomArea alienArea randyArea kennyArea";
-}
+Once I have the button in place I will then use display flex grid to change the layout of the display and character sections within the gifArea div, button/character selections on the right with intensions of adding more at below the display. I use id & class names as well as elements in both html & css so affect the layout of my section.
 
-img {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-}
+Once I have the basic layout in place I will then add my JS within the html code as this helps me visualise things better. I will use jquery to write the function that once a button is clicked, a GIF will appear in the gifArea. I will use links I've used in previous project and amend to produce South Park GIF. This function will cause an img element tobe created within the gifArea. I later discover that my css code for img elements affects the images and layout of the nav bar so I later have the function to add an additional attribute within the generated img element which replaces my img css and fixed the navbar bug.
 
-#gifArea {
-  min-height: 100%;
-  min-width: 100%;
-  position: absolute;
-  border: 2px;
-  background-color: black;
-  text-align: start;
-  grid-area: gifArea;
-  background-image: url("../images/GIF\ Background.webp");
-  background-size: cover;
-  background-repeat: no-repeat;
-  z-index: +1;
-}
+I also have to add further code to my function to reset gifArea allowing only 1 GIF to display which is the new GIF produced following user selection. Further issues arise as the generated GIF can overtake other elements within the page depending on the size of the GIF or the screen. At first I tried to use z-index within css which only partly fixed this by preventing overlapping the selections. In the end I used height & width at 100% as well as position: absolute as well as margin to centralize my card within the page.
+Once I have all functions working correctly for 1 character, I just copy and paste this for every character and amend id's & classes within the code so I can cope, paste and amend in CSS as well.
 
-#cartmanArea {
-  grid-area: cartmenArea;
-  background-image: url("../images/pngwing.com\ \(4\).png");
-  
-}
-
-#kyleArea {
-  grid-area: kyleArea;
-  background-image: url("../images/pngwing.com\ \(3\).png");
-}
-
-#stanArea {
-  grid-area: stanArea;
-  background-image: url("../images/StanP.webp");
-}
-
-#kennyArea {
-  grid-area: kennyArea;
-  background-image: url("../images/kisspng-kenny-mccormick-stan-marsh-eric-cartman-kyle-brofl-the-simpsons-movie-5acd4ee617a2e4.3338368515234045180968.png");
-}
-
-#randyArea {
-  grid-area: randyArea;
-  background-image: url("../images/kisspng-randy-and-sharon-marsh-kyle-broflovski-stan-marsh-first-appearance-5b52cfe6e3d409.2266863115321538309332.png");
-}
-
-#alienArea {
-  grid-area: alienArea;
-  background-image: url("../images/pngwing.com\ \(1\).png");
-}
-
-#randomArea {
-  grid-area: randomArea;
-  background-image: url("../images/pngwing.com.png");
-}
-
-.button {
-  grid-area: span;
-}
-.box {
-  position: relative;
-}
-.basic {
-  box-shadow: 10px 8px 10px 5px rgb(73, 219, 245);
-}
-
-.shadow:before {
-  content:"";
-  position: absolute;
-  inset: -5px;
-  transform: translate(10px,8px);
-  z-index: -1;
-  filter: blur(10px);
-}
+The starter code has also been updated by Marlena which I pull and re add my section into and after a few bug fixes, the code and user interface work as expected so I play around with images and layout to suit starter home page. As Marlena has added @media queries and I hace used displayed flex, the gif generator works well within all aspects so have no need to amend further so have started to see if I can create a further API for the fan page.
