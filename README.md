@@ -13,7 +13,9 @@ Mark- GIPHY Page:
 The purpose of the GIPHY page is to allow the user to access GIF's of his favourite South Park Characters at the tap of a finger. The main purpose of this interface I assume will be mobile based where users can share GIF's in all social networks.
 Using HTML to build a section within the Home Page starter code provided by Marlena, ready for the CSS to help create a basic, simple to use by mobile devices user inter face and then finally using JavaScript & JQuery to implement the GYPHY API.
 
-Ric- YouTube Shorts Page: 
+Ric- YouTube Shorts Page:
+
+The purpose of the Youtube shorts was to allow the user to pick between a selection of South Park videos directly from a playlist by click on successive thumbnails. This was achieved with some javaScript & jquery which allows the selected thumbnail to play in the main video container.
 
 Yusuf- Fun Facts Page:
 
