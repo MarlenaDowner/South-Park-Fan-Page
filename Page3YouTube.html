@@ -4,157 +4,78 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>South Park Fan Page</title>
 
-<!--Bootstrap core CSS-->
+    <!--Bootstrap core CSS-->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
-<script src="https://kit.fontawesome.com/27e5aba8c6.js" crossorigin="anonymous"></script>
-
-<!--Custom style for this template-->
-<link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="./assets/youStyle.css">
+    <title>Document</title>
 </head>
 <body>
-
-  <!--Back ground div-->
-  <div class="background1">
-
- <!----Navigation---->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">
-      <div class="logoImg">
-        <img src="./assets/pictures/Eric-South-Park-PNG.png" id="mainLogo" alt="Main Logo image" href="#"></a>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+          <div class="logoImg">
+            <img src="./assets/pictures/Eric-South-Park-PNG.png" id="mainLogo" alt="Main Logo image" href="#"></a>
+            </div>
+            <div class="bannerlogo">
+            <img src="./assets/pictures/written logo.png" id="banner" alt="Written Logo image">
+          </div>
+        </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active"> <!--Add all # links to the nav bar-->
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Giphy</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Fun Facts</a>
+            </li>
+          </ul>
         </div>
-        <div class="bannerlogo">
-        <img src="./assets/pictures/written logo.png" id="banner" alt="Written Logo image">
-      </div>
-    </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item active"> <!--Add all # links to the nav bar-->
-          <a class="nav-link" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Giphy</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">YouTube Shorts</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Fun Facts</a>
-        </li>
-      </ul>
+      </nav>
+
+    <!-- youtube API  -->
+    <div class="yt-container">
+        <header class="logo">
+            <svg xmlns="http://www.w3.org/2000/svg" height="800" width="1200" xml:space="preserve" y="0" x="0" id="Layer_1" version="1.1" viewBox="-57.15 -21.25 495.3 127.5"><style id="style7427" type="text/css">.st2{fill:#282828}</style><g id="g7433"><path id="path7429" d="M118.9 13.3c-1.4-5.2-5.5-9.3-10.7-10.7C98.7 0 60.7 0 60.7 0s-38 0-47.5 2.5C8.1 3.9 3.9 8.1 2.5 13.3 0 22.8 0 42.5 0 42.5s0 19.8 2.5 29.2C3.9 76.9 8 81 13.2 82.4 22.8 85 60.7 85 60.7 85s38 0 47.5-2.5c5.2-1.4 9.3-5.5 10.7-10.7 2.5-9.5 2.5-29.2 2.5-29.2s.1-19.8-2.5-29.3z" fill="red"/><path id="polygon7431" fill="#fff" d="M48.6 24.3v36.4l31.6-18.2z"/></g><g id="g7451"><g id="g7449"><path id="path7435" d="M176.3 77.4c-2.4-1.6-4.1-4.1-5.1-7.6-1-3.4-1.5-8-1.5-13.6v-7.7c0-5.7.6-10.3 1.7-13.8 1.2-3.5 3-6 5.4-7.6 2.5-1.6 5.7-2.4 9.7-2.4 3.9 0 7.1.8 9.5 2.4 2.4 1.6 4.1 4.2 5.2 7.6 1.1 3.4 1.7 8 1.7 13.8v7.7c0 5.7-.5 10.2-1.6 13.7-1.1 3.4-2.8 6-5.2 7.6-2.4 1.6-5.7 2.4-9.8 2.4-4.2-.1-7.6-.9-10-2.5zm13.5-8.4c.7-1.7 1-4.6 1-8.5V43.9c0-3.8-.3-6.6-1-8.4-.7-1.8-1.8-2.6-3.5-2.6-1.6 0-2.8.9-3.4 2.6-.7 1.8-1 4.6-1 8.4v16.6c0 3.9.3 6.8 1 8.5.6 1.7 1.8 2.6 3.5 2.6 1.6 0 2.7-.8 3.4-2.6z" class="st2"/><path id="path7437" d="M360.9 56.3V59c0 3.4.1 6 .3 7.7.2 1.7.6 3 1.3 3.7.6.8 1.6 1.2 3 1.2 1.8 0 3-.7 3.7-2.1.7-1.4 1-3.7 1.1-7l10.3.6c.1.5.1 1.1.1 1.9 0 4.9-1.3 8.6-4 11-2.7 2.4-6.5 3.6-11.4 3.6-5.9 0-10-1.9-12.4-5.6-2.4-3.7-3.6-9.4-3.6-17.2v-9.3c0-8 1.2-13.8 3.7-17.5 2.5-3.7 6.7-5.5 12.6-5.5 4.1 0 7.3.8 9.5 2.3 2.2 1.5 3.7 3.9 4.6 7 .9 3.2 1.3 7.6 1.3 13.2v9.1h-20.1zm1.5-22.4c-.6.8-1 2-1.2 3.7-.2 1.7-.3 4.3-.3 7.8v3.8h8.8v-3.8c0-3.4-.1-6-.3-7.8-.2-1.8-.7-3-1.3-3.7-.6-.7-1.6-1.1-2.8-1.1-1.4-.1-2.3.3-2.9 1.1z" class="st2"/><path id="path7439" d="M147.1 55.3L133.5 6h11.9l4.8 22.3c1.2 5.5 2.1 10.2 2.7 14.1h.3c.4-2.8 1.3-7.4 2.7-14l5-22.4h11.9L159 55.3v23.6h-11.8V55.3z" class="st2"/><path id="path7441" d="M241.6 25.7V79h-9.4l-1-6.5h-.3c-2.5 4.9-6.4 7.4-11.5 7.4-3.5 0-6.1-1.2-7.8-3.5-1.7-2.3-2.5-5.9-2.5-10.9V25.7h12v39.1c0 2.4.3 4.1.8 5.1s1.4 1.5 2.6 1.5c1 0 2-.3 3-1 1-.6 1.7-1.4 2.1-2.4V25.7z" class="st2"/><path id="path7443" d="M303.1 25.7V79h-9.4l-1-6.5h-.3c-2.5 4.9-6.4 7.4-11.5 7.4-3.5 0-6.1-1.2-7.8-3.5-1.7-2.3-2.5-5.9-2.5-10.9V25.7h12v39.1c0 2.4.3 4.1.8 5.1s1.4 1.5 2.6 1.5c1 0 2-.3 3-1 1-.6 1.7-1.4 2.1-2.4V25.7z" class="st2"/><path id="path7445" d="M274.2 15.7h-11.9v63.2h-11.7V15.7h-11.9V6h35.5z" class="st2"/><path id="path7447" d="M342.8 34.2c-.7-3.4-1.9-5.8-3.5-7.3s-3.9-2.3-6.7-2.3c-2.2 0-4.3.6-6.2 1.9-1.9 1.2-3.4 2.9-4.4 4.9h-.1V3.3h-11.6v75.6h9.9l1.2-5h.3c.9 1.8 2.3 3.2 4.2 4.3 1.9 1 3.9 1.6 6.2 1.6 4.1 0 7-1.9 8.9-5.6 1.9-3.7 2.9-9.6 2.9-17.5v-8.4c-.1-6.1-.4-10.8-1.1-14.1zm-11 21.7c0 3.9-.2 6.9-.5 9.1-.3 2.2-.9 3.8-1.6 4.7-.8.9-1.8 1.4-3 1.4-1 0-1.9-.2-2.7-.7-.8-.5-1.5-1.2-2-2.1V38.1c.4-1.4 1.1-2.6 2.1-3.6 1-.9 2.1-1.4 3.2-1.4 1.2 0 2.2.5 2.8 1.4.7 1 1.1 2.6 1.4 4.8.3 2.3.4 5.5.4 9.6v7z" class="st2"/></g></g></svg>
+        </header>
+
+        <section id="video">
+            
+        </section>
+
+        <main>
+            
+        </main>
+
     </div>
-  </nav>
 
-  <!----Header---->
-  <header>
-    <div class="AllHeaders">
-      <h1>
-        FAN PAGE
-      </h1>
-    </div>
-  </header>
-  <!-----------------------COPY FROM HERE ALL OF ABOVE --------------------------->
-
-<!----Youtube Trailer link---->
-<!-- 16:9 aspect ratio -->
-<div class="embed-responsive embed-responsive-16by9">
-  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/L0Df57fRR5o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-</div>
-
-<!------Home page info------>
-<section>
-  <div class="InfoCard1">
-  <div class="card">
-    <h5 class="card-header text-center">Welcome to South Park Fan Page!</h5>
-    <div class="card-body">
-      <h5 class="card-title text-center">All things South Park and more...</h5>
-      <p class="homeIntro">Sit back and watch some of South Parks best hilarious clips via our YouTube Shorts page, explore and save on our GIPHY page, brush up on Fun Facts or put your knowledge to the test with our fun Quiz. Follow the adventures of Stan, Kyle, Cartman, and Kenny as they navigate the absurdities of small-town life. Join the fandom and embrace the craziness that is South Park. Whether you're a lifelong fan or a newcomer to the show, there's always something new to love about South Park and you can find it all on South Park Fan Page!</p>
-      <!-- <a href="#" class="btn btn-primary">YouTube Shorts</a> -->
-    </div>
-  </div>
-</div>
-</section>        
-
-<section>
-  <div class="card mb-3">
-    <h5 class="card-header text-center">GIPHYS</h5>
-    <img src="./assets/pictures/quiz picture.jpg" class="card-img-top" alt="..."> <!----Add card picture---->
-    <div class="card-body">
-      <h5 class="card-title">All things South Park and more...</h5>
-      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-      <a href="#" class="btn btn-primary">View GIPHYS</a> <!----Add # to page---->
-    </div>
-  </div>
-</section>
-
-<section>
-  <div class="card mb-3">
-    <h5 class="card-header text-center">YouTube Shorts</h5>
-    <img src="./assets/pictures/quiz picture.jpg" class="card-img-top" alt="..."> <!----Add card picture---->
-    <div class="card-body">
-      <h5 class="card-title">All things South Park and more...</h5>
-      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-      <a href="#" class="btn btn-primary">Watch YouTube Shorts</a> <!----Add # to page---->
-    </div>
-  </div>
-</section>
-
-<section>
-  <div class="card mb-3">
-    <h5 class="card-header text-center">Fun Facts</h5>
-    <img src="./assets/pictures/quiz picture.jpg" class="card-img-top" alt="..."> <!----Add card picture---->
-    <div class="card-body">
-      <h5 class="card-title">All things South Park and more...</h5>
-      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-      <a href="#" class="btn btn-primary">View Fun Facts</a> <!----Add # to page---->
-    </div>
-  </div>
-</section>
-
-<!-- <section>
-  <div class="InfoCard">
-    <div class="card">
-      <div class="card-body">
-        <p class="homeIntro">
-          Lorem ipsum dolor sit amet. Est consequuntur reiciendis sed corporis corporis non doloremque enim non ipsum explicabo rem dolor Quis est minus suscipit. Qui ipsam ipsam non consequatur nulla in temporibus reprehenderit et quisquam nesciunt. Nam quas nostrum aut voluptatem rerum eum quae maiores ex consectetur perferendis ut ipsam natus et recusandae mollitia. Ea dolor provident ab fugiat quas et inventore iure et dolores alias aut illo porro.
-        </p>
-      </div>
-    </div>
-  </div>
-</section> -->
-
-<!-----------------------COPY FROM HERE--------------------------->
-<!------Footer------>
-<footer class="footer bg-light">
-  <div class="footercontainer">
-    <div class="row">
-      <div class="col-lg-6 h-100 text-center mx-auto" id="footer">
-        <ul class="list-inline">
-          <li class="list-inline-item mr-3">
-            <a href="https://www.youtube.com/watch?v=DCg8Hbok1Ks&t=1120s" id="icon">
-              <i class="bi bi-youtube fa-2x fa-fw"></i>
-            </a>
-            <a href="https://github.com/MarlenaDowner/South-Park-Fan-Page" id="icon">
-              <i class="bi bi-github fa-2x fa-fw"></i>
-            </a>
-          </li>
-        </ul>
-        <img src="./assets/pictures/small pics.png" id="characters" alt="South Park Characters">
-        <p class="small mb-4 mb-lg-0">SOUTH PARK FAN PAGE 2023. Coded by Mark - Marlena - Richard - Yusuf.</p>
-      </div>
-    </div>
-  </div>
-</footer>
-
-<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
-
-</div> <!--Back ground div-->
+    <footer class="footer bg-light">
+        <div class="footercontainer">
+          <div class="row">
+            <div class="col-lg-6 h-100 text-center mx-auto" id="footer">
+              <ul class="list-inline">
+                <li class="list-inline-item mr-3">
+                  <a href="https://www.youtube.com/watch?v=DCg8Hbok1Ks&t=1120s" id="icon">
+                    <i class="bi bi-youtube fa-2x fa-fw"></i>
+                  </a>
+                  <a href="https://github.com/MarlenaDowner/South-Park-Fan-Page" id="icon">
+                    <i class="bi bi-github fa-2x fa-fw"></i>
+                  </a>
+                </li>
+              </ul>
+              <img src="./assets/pictures/small pics.png" id="characters" alt="South Park Characters">
+              <p class="small mb-4 mb-lg-0">SOUTH PARK FAN PAGE 2023. Coded by Mark - Marlena - Richard - Yusuf.</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="./assets/youTube.js"></script>
 </body>
 </html>
-<!-----------------------COPY FROM HERE--------------------------->
