@@ -21,7 +21,7 @@ Yusuf- Fun Facts Page:
 
 The purpose of the Fun Facts page was to give the user four of their favourite South Park Characters as options to pick fun facts from with just the click of a button. It was built using HTML, Bootstrap (with some separate CSS styling) and JavaScript. It is responsive, interactive and adapts across all viewports.
 
-##Softwars Used
+## Softwars Used
 
 - VScode
 - HTML
