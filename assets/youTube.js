@@ -43,8 +43,8 @@ $(document).ready(function(){
             <article class="item" data-key="${vid}">
                     <img src="${thumb}" alt="" class="thumb">
                     <div class="details">
-                        <h4>${title}</h4>
-                        <p>${desc}</p>
+                        <h4 id="head">${title}</h4>
+                        <p id="phara">${desc}</p>
                     </div>
             </article>
             
