@@ -21,6 +21,13 @@ body {
 }
 
 /*----GIFY Back ground image----*/
+.background2 {
+    background-image: url('./pictures/south-park-25th-anniversay-081222-1bc607f6291e4e1c91e31da1034de47a.webp');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 200% 100%;
+    background-position: center;  
+}
 
 /*----YOUTUBE SHORTS Back ground image----*/
 
