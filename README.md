@@ -1,17 +1,67 @@
------- GIF README Section ------
+# South Park Fan Page- Project 1
 
-After initial idea discussion with the Team we put together wire frames of our idea's so we had an idea of what our target design is. 
-The purpose of our fan page is to have easy access to the little reminders of their favourite episodes, and my input in the fiels is to create the GIF Generator within the starter code provided by Marlena. This starter code included the nav ba menu with burger menu for smaller size screens, the footer and websites background image as well as @media css code for different screen sizes. 
+As a group our main motivation was to conceive and execute a web page that solves a real-world problem by integrating data received from multiple server-side API requests. As a collective we decided to create a South Park Fan Page that uses can interact with all the pages. The interactions is as follows: A dynamic Home page which displays the websites main features via linked cards, a GIPHYS page allows users can flick through the different characters GIPHYS and save them, a dedicated YouTube Shorts page which list some of South Parks most funniest clips, and a Fun Fact page which allows the user to click on the main character faces to display some fun facts about them. We used two API's YouTube and GIPHY. We decided to build a Fan Page as individuals we had a shared common instrest. We wanted other South Park fans or users who haven't been exposed to South Park to have a page that they find informative and fun at the same time. Thus creating the page acts as a point of call for all things South Park.
 
-Now I have the basic layout of the South Park Fan Page I will use html code to create the different elements within my section/page. This includes a display section for the GIF's generated and then to create a simple user interface where the the user can select the GIF generator to produce GIF's based on a specific character. for example, I will create some form of button where the user can select the character Kenny and all GIF's displayed to be based on 'OMG they killed Kenny".
+##Web Page Features
 
-In the HTML I will create a Header to advise the user this is the GIF section, so it will have a header element for the title and then a second element below the header where the GIF link can be displayed further down the line. Then I will start by adding 1 div element which will contain the 4 seperate div elements for characters Eric, Stan, Kyle & Kenny as well as the display section. I instend to use CSS flex display to organise these divs when displayed on the website. Within each character div I will add a div for the button in the user interface, I later remove these buttons as well as the div as I use character images as button or options. I will then add h4 headings for each character and add css code within the element to change visual of h4. 
+Marlena- Home Page:
 
-Once I have the button in place I will then use display flex grid to change the layout of the display and character sections within the gifArea div, button/character selections on the right with intensions of adding more at below the display. I use id & class names as well as elements in both html & css so affect the layout of my section.
+During the process of creating the Home page and main CSS layout for the pages I leant the importance of creating a responsive layout for all devices. I started by creating the Nav Bar and Footers using Bootstrap. I then had to talior the logo and written logo to respond accordingly. Once the Nav bar  and Footer was repsonding responsively the rest of the team then was able to pull from the main so that their pages had these features. I then began to work on the CSS which will be applied across all the pages. Using comments to make the CSS easier to read for the team really helped us be able to work in the agile methodology. Once the CSS was completed I then added Cards with buttons of featured pages of the webpage so that the user can access the pages either via the Nav bar drop downs or via the dynamic Cards. Once as a team we was all ready we merged the pages to the main branch. After which we fixed any conflicting bugs and made sure all the pages was working.
 
-Once I have the basic layout in place I will then add my JS within the html code as this helps me visualise things better. I will use jquery to write the function that once a button is clicked, a GIF will appear in the gifArea. I will use links I've used in previous project and amend to produce South Park GIF. This function will cause an img element tobe created within the gifArea. I later discover that my css code for img elements affects the images and layout of the nav bar so I later have the function to add an additional attribute within the generated img element which replaces my img css and fixed the navbar bug.
+Mark- GIPHY Page:
 
-I also have to add further code to my function to reset gifArea allowing only 1 GIF to display which is the new GIF produced following user selection. Further issues arise as the generated GIF can overtake other elements within the page depending on the size of the GIF or the screen. At first I tried to use z-index within css which only partly fixed this by preventing overlapping the selections. In the end I used height & width at 100% as well as position: absolute as well as margin to centralize my card within the page.
-Once I have all functions working correctly for 1 character, I just copy and paste this for every character and amend id's & classes within the code so I can cope, paste and amend in CSS as well.
+The purpose of the GIPHY page is to allow the user to access GIF's of his favourite South Park Characters at the tap of a finger. The main purpose of this interface I assume will be mobile based where users can share GIF's in all social networks.
+Using HTML to build a section within the Home Page starter code provided by Marlena, ready for the CSS to help create a basic, simple to use by mobile devices user inter face and then finally using JavaScript & JQuery to implement the GYPHY API.
 
-The starter code has also been updated by Marlena which I pull and re add my section into and after a few bug fixes, the code and user interface work as expected so I play around with images and layout to suit starter home page. As Marlena has added @media queries and I hace used displayed flex, the gif generator works well within all aspects so have no need to amend further so have started to see if I can create a further API for the fan page.
+Ric- YouTube Shorts Page: 
+
+Yusuf- Fun Facts Page:
+
+The purpose of the Fun Facts page was to give the user four of their favourite South Park Characters as options to pick fun facts from with just the click of a button. It was built using HTML, Bootstrap (with some separate CSS styling) and JavaScript. It is responsive, interactive and adapts across all viewports.
+
+##Softwars Used
+
+- VScode
+- HTML
+- CSS
+- JavaScript
+- Bootstrap
+- Awesome Font 
+- YOUTUBE PLAYER API https://developers.google.com/youtube/iframe_api_reference
+- GIPHY API https://developers.giphy.com/
+- Figma
+
+##Project Screenshots
+Figma Wireframe
+![screenshot Wireframe ](./images/screenshot1.JPG)
+
+Homepage
+![screenshot of weather app ](./images/screenshot2.png)
+
+GIPHY Page
+![screenshot of weather app ](./images/screenshot3.png)
+
+YouTube Shorts Page
+![screenshot of weather app ](./images/screenshot4.png)
+
+Fun Facts Page
+![screenshot of weather app ](./images/screenshot5.png)
+
+## Links
+
+
+## License
+MIT License
+
+Copyright (c) 2022 MIT License.
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+
+
+
+
