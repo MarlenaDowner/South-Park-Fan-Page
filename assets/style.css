@@ -369,7 +369,9 @@ footer p {
     background-position: center;
 }
 
-
+.charimg{
+    height: 80%;
+}
 
 
 /*---------------------Media Screens----------------------------------------------*/
