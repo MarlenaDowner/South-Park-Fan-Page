@@ -1,5 +1,8 @@
 // FUN FACT PAGE ------------
 
+
+// Character Fun Fact Arrays vvvvvvvvvv
+
 var cartmanInfo = 
 ["Cartman is loosely based on a high school classmate of Trey Parker, one of South Park’s co-creators.",
 "The creators believe that children have no social etiquette or tact, and are generally awful, so Cartman was created as a version of the worst child they could imagine.",
@@ -24,12 +27,17 @@ var stanInfo =
 "Cartman was shown dressed up as Britney Spears in 'AWESOM-O', Kyle had a female avatar in 'Make Love, Not Warcraft', and Kenny dressed like a princess in three of the last four episodes of Season Seventeen and South Park: The Stick of Truth.",
 "Stan is the only one of the four who has never contracted a terminal illness, as both Kyle and Cartman contracted AIDS in 'Tonsil Trouble' and Kenny contracted muscular dystrophy in 'Kenny Dies'."]
 
+
+
 var cartmanImg = document.getElementById("cartman");
 var kennyImg = document.getElementById("kenny");
 var kyleImg = document.getElementById("kyle");
 var stanImg = document.getElementById("stan")
 var cardText = document.getElementById("card-text");
 var chosenImg = document.getElementById("abc");
+
+
+// Randomly Selecting fun facts from the character arrays depending on which character is chosen vvvv
 
 cartmanImg.addEventListener("click", () => {
 cardText.textContent = cartmanInfo[Math.floor(Math.random() * (cartmanInfo.length))]
