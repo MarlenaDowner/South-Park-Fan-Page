@@ -33,7 +33,7 @@ The purpose of the Fun Facts page was to give the user four of their favourite S
 - GIPHY API https://developers.giphy.com/
 - Figma
 
-##Project Screenshots
+## Project Screenshots
 Figma Wireframe
 ![screenshot Wireframe ](./images/screenshot1.JPG)
 
