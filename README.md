@@ -2,7 +2,7 @@
 
 As a group our main motivation was to conceive and execute a web page that solves a real-world problem by integrating data received from multiple server-side API requests. As a collective we decided to create a South Park Fan Page that uses can interact with all the pages. The interactions is as follows: A dynamic Home page which displays the websites main features via linked cards, a GIPHYS page allows users can flick through the different characters GIPHYS and save them, a dedicated YouTube Shorts page which list some of South Parks most funniest clips, and a Fun Fact page which allows the user to click on the main character faces to display some fun facts about them. We used two API's YouTube and GIPHY. We decided to build a Fan Page as individuals we had a shared common instrest. We wanted other South Park fans or users who haven't been exposed to South Park to have a page that they find informative and fun at the same time. Thus creating the page acts as a point of call for all things South Park.
 
-##Web Page Features
+## Web Page Features
 
 Marlena- Home Page:
 
