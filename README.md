@@ -51,6 +51,9 @@ Fun Facts Page
 
 ## Links
 
+https://marlenadowner.github.io/South-Park-Fan-Page/
+
+https://github.com/MarlenaDowner/South-Park-Fan-Page
 
 ## License
 MIT License
